@@ -31,8 +31,7 @@ class ServerSentEventReader {
             let end = eol.startIndex
             let lineRange = start ..< end
             let lineData = buffer[lineRange]
-            buffer.removeFirst(lineRange.count + eol.count)
-            buffer = Data(buffer)
+            buffer = buffer.advanced(by: lineRange.count + eol.count)
             guard let line = String(data: lineData, encoding: String.Encoding.utf8) else {continue}
             if line.isEmpty {
                 let event = Event(id: lastEventId, type: event, data: data)
