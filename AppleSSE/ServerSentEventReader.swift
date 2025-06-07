@@ -37,7 +37,7 @@ class ServerSentEventReader {
             if line.isEmpty {
                 let event = Event(id: lastEventId, type: event, data: data)
                 events.append(event)
-                cleanBufferFields()
+                cleanBufferedFields()
                 continue
             }
             if line.starts(with: ":") {
@@ -85,7 +85,7 @@ class ServerSentEventReader {
         }
     }
     
-    private func cleanBufferFields() {
+    private func cleanBufferedFields() {
         event = ""
         data = ""
         lastEventId = ""
