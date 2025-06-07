@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A4131F482DF1E2B600936A78 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4131F472DF1E2B600936A78 /* main.swift */; };
+		A42FC68E2DF27AC1000DAE5B /* EventSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42FC68D2DF27AC1000DAE5B /* EventSource.swift */; };
+		A4F9CC2E2DF478530084D1C8 /* ServerSentEventReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4F9CC2D2DF478530084D1C8 /* ServerSentEventReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		A4131F442DF1E2B600936A78 /* AppleSSE */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AppleSSE; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4131F472DF1E2B600936A78 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A42FC68D2DF27AC1000DAE5B /* EventSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSource.swift; sourceTree = "<group>"; };
+		A4F9CC2D2DF478530084D1C8 /* ServerSentEventReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerSentEventReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				A4131F472DF1E2B600936A78 /* main.swift */,
+				A42FC68D2DF27AC1000DAE5B /* EventSource.swift */,
+				A4F9CC2D2DF478530084D1C8 /* ServerSentEventReader.swift */,
 			);
 			path = AppleSSE;
 			sourceTree = "<group>";
@@ -121,6 +127,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4131F482DF1E2B600936A78 /* main.swift in Sources */,
+				A42FC68E2DF27AC1000DAE5B /* EventSource.swift in Sources */,
+				A4F9CC2E2DF478530084D1C8 /* ServerSentEventReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
