@@ -285,7 +285,7 @@
 				A4131F4A2DF1E2B600936A78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A4131F4B2DF1E2B600936A78 /* Build configuration list for PBXNativeTarget "AppleSSE" */ = {
 			isa = XCConfigurationList;
@@ -294,7 +294,7 @@
 				A4131F4D2DF1E2B600936A78 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

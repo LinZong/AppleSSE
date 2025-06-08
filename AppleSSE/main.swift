@@ -20,6 +20,12 @@ extension Date {
     }
 }
 
+extension String {
+    func trim() -> String {
+        return self.trimmingCharacters(in: [" ", "\n"])
+    }
+}
+
 class SSEListener: EventSourceListener {
     func onOpen(response: URLResponse) {
         print("onOpen, response: \(response)")
@@ -27,7 +33,7 @@ class SSEListener: EventSourceListener {
     
     func onEvent(id: String?, type: String?, data: String) {
         let clientTime = Date().millisecondsSince1970
-        print("onEvent -- id: \(id), type: \(type), data: \(data), clientTime: \(clientTime)")
+        print("onEvent -- id: \(id), type: \(type), data: \(data.trim()), clientTime: \(clientTime)")
     }
     
     func onClosed() {
@@ -40,6 +46,6 @@ class SSEListener: EventSourceListener {
     }
 }
 
-let request = URLRequest(url: URL(string: "http://y430p.io:8000/sse")!)
+var request = URLRequest(url: URL(string: "http://y430p.io:8000/sse")!, timeoutInterval: TimeInterval(600.0))
 let source = EventSources.shared.newEventSource(request, SSEListener())
 condition.wait()
